@@ -9,9 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
+    <script src="skillsScript.js"></script>
 </head>
 
-<body>
+<body onload="getAllSkills()">
     <div class="wrapper">
         <aside>
             <img class="cv-photo" src="photo.jpg" width="370px" height="354px" />
@@ -28,32 +29,20 @@
             </div>
             <div class="tech-skills-block">
                 <h2 class="header-secondary">Tech Skills</h2>
-                <ul class="list-secondary">
-                    <li><span class="list-secondary-item">HTML5</span></li>
-                    <li><span class="list-secondary-item">CSS3</span></li>
-                    <li><span class="list-secondary-item">GIT</span></li>
-                    <li><span class="list-secondary-item">WebPack</span></li>
-                    <li><span class="list-secondary-item">JavaScript</span></li>
-                    <li><span class="list-secondary-item">React.js</span></li>
-                    <li><span class="list-secondary-item">Node.js</span></li>
-                </ul>
+                <ul class="list-secondary" id="techSkills"> </ul>
+
             </div>
             <div class="soft-skills-block">
                 <h2 class="header-secondary">Soft Skills</h2>
-                <ul class="list-secondary">
-                    <li><span class="list-secondary-item">Scrum</span></li>
-                    <li><span class="list-secondary-item">Agile</span></li>
-                    <li><span class="list-secondary-item">GTD</span></li>
-                    <li><span class="list-secondary-item">STeamwork</span></li>
-                </ul>
+                <ul class="list-secondary" id="softSkills"> </ul>
             </div>
         </aside>
 
         <main>
-            <div>
-                <h2>Front-End Developer</h2>
+            <div class="main-description">
+                <h2 class="job-tittle">Front-End Developer</h2>
                 <h1>John Doe</h1>
-                <p>
+                <p class="description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Quis ipsum suspendisse ultrices gravida.
@@ -62,30 +51,36 @@
                 </p>
             </div>
 
-            <div>
-                <h2>Projects</h2>
-                <ol>
+            <div class="projects">
+                <h2 class="header-primary">Projects</h2>
+                <ol class="list-primary">
                     <li>
-                        <a href="https://barbershop-pl.goit.global/">https://barbershop-pl.goit.global/</a>..........[
-                        HTML5, CSS3 ]
+                        <a class="list-primary-item"
+                            href="https://barbershop-pl.goit.global/">https://barbershop-pl.goit.global/</a>
+                        <span class="list-primary-item">..........</span>[ 
+                        <span class="list-primary-item">                            HTML5, CSS3 </span> ]
                     </li>
                     <li>
-                        <a href="https://cryptohub.goit.global/">https://cryptohub.goit.global/</a>................[
-                        JavaScript ]
+                        <a class="list-primary-item"
+                            href="https://cryptohub.goit.global/">https://cryptohub.goit.global/</a>
+                        <span class="list-primary-item">................</span> [ 
+                        <span class="list-primary-item"> JavaScript</span> ] 
                     </li>
                     <li>
-                        <a href="https://kidslike.goit.global/">https://kidslike.goit.global/</a>....................[
-                        React.js, Node.js ]
+                        <a class="list-primary-item"
+                            href="https://kidslike.goit.global/">https://kidslike.goit.global/</a><span
+                            class="list-primary-item">....................</span> [ 
+                        <span class="list-primary-item"> React.js, Node.js</span> ] 
                     </li>
                 </ol>
             </div>
             <div>
-                <h2>Work Experience</h2>
+                <h2 class="header-primary">Work Experience</h2>
                 <div>
-                    <h3>Front-End Developer Freelance</h3>
-                    <p>September 2019 - up to now | Country</p>
+                    <h3 class="job-name">Front-End Developer <span class="highlight">Freelance</span></h3>
+                    <p class="job-date">September 2019 - up to now | Country</p>
 
-                    <ul>
+                    <ul class="job-list">
                         <li>
                             Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit, sed do eiusmod tempor
@@ -103,10 +98,10 @@
                     </ul>
                 </div>
                 <div>
-                    <h3>Manager Glory New</h3>
-                    <p>March 2015 - October 2018 | Country</p>
+                    <h3 class="job-name">Manager <span class="highlight">Glory New</span></h3>
+                    <p class="job-date">March 2015 - October 2018 | Country</p>
 
-                    <ul>
+                    <ul class="job-list">
                         <li>
                             Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit, sed do eiusmod tempor
@@ -120,10 +115,10 @@
                     </ul>
                 </div>
                 <div>
-                    <h3>Manager Glory LLC</h3>
-                    <p>June 2014 - February 2015 | Country</p>
+                    <h3 class="job-name">Manager <span class="highlight">Glory LLC</span></h3>
+                    <p class="job-date">June 2014 - February 2015 | Country</p>
 
-                    <ul>
+                    <ul class="job-list">
                         <li>
                             Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit, sed do eiusmod tempor
@@ -138,12 +133,11 @@
                 </div>
             </div>
             <div>
-                <h2>Education</h2>
+                <h2 class="header-primary">Education</h2>
                 <div>
-                    <h3>National University</h3>
-                    <h4>Management</h4>
-                    <p>September 2009 - June 2014 | Country</p>
-
+                    <span class="job-name"><span class="highlight">National University</span></h3>
+                    <h4 class="field-of-study">Management</h4>
+                    <p class="job-date">September 2009 - June 2014 | Country</p>
                     <ul></ul>
                 </div>
             </div>
