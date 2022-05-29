@@ -3,6 +3,21 @@ body {
     background: #f5f7fa;
 }
 
+h1 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+}
+
+aside {
+    background-color: #1e2939;
+    width: 370px;
+}
+
+main {
+    padding: 102px 88px;
+}
+
 .wrapper {
     display: flex;
     flex-direction: row;
@@ -11,11 +26,6 @@ body {
     margin: 40px auto;
     background: #ffffff;
     box-shadow: 6px 6px 20px 0px #0000001a;
-}
-
-aside {
-    background-color: #1e2939;
-    width: 370px;
 }
 
 .cv-photo {
@@ -27,10 +37,11 @@ aside {
 }
 
 .contact-links {
-    color: #ffffff;
+    color: #dddddd;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+    text-decoration: none;
 }
 
 .bold {
@@ -55,17 +66,9 @@ aside {
     margin-left: 40px;
 }
 
-.tech-skills-block {
+.skills-block {
     margin-top: 47px;
     margin-left: 40px;
-}
-.soft-skills-block {
-    margin-top: 47px;
-    margin-left: 40px;
-}
-
-main {
-    padding: 102px 88px;
 }
 
 .main-description {
@@ -77,12 +80,6 @@ main {
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
-}
-
-h1 {
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 55px;
 }
 
 .description {
@@ -126,6 +123,7 @@ h1 {
     font-size: 16px;
     line-height: 20px;
 }
+
 .highlight {
     color: #fb6d3a;
 }

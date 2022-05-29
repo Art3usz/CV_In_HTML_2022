@@ -9,33 +9,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
-    <script src="skillsScript.js"></script>
+
 </head>
 
-<body onload="getAllSkills()">
+<body>
     <div class="wrapper">
         <aside>
-            <img class="cv-photo" src="photo.jpg" width="370px" height="354px" />
-            <div class="contact-block">
-                <h2 class="header-secondary">Contacts</h2>
-
-                <p class="contact-links">
-                    <span class="bold">C:</span>
-                    <a class="contact-links" href="tel:+7 777 777 77 77"> +7 777 777 77 77</a>
-                    <br />
-                    <span class="bold"> E:</span>
-                    <a class="contact-links" href="mailto:johndoe@gmail.com">johndoe@gmail.com</a>
-                </p>
-            </div>
-            <div class="tech-skills-block">
-                <h2 class="header-secondary">Tech Skills</h2>
-                <ul class="list-secondary" id="techSkills"> </ul>
-
-            </div>
-            <div class="soft-skills-block">
-                <h2 class="header-secondary">Soft Skills</h2>
-                <ul class="list-secondary" id="softSkills"> </ul>
-            </div>
+            <!-- <img class="cv-photo" src="photo.jpg" width="370px" height="354px" />-->
+            <div class="contact-block" id="contacts"></div>
+            <div class="skills-block" id="techSkills"> </div>
+            <div class="skills-block" id="softSkills"> </div>
+            <script src="skillsScript.js" onload="getContacts()"></script>
+            <script src="skillsScript.js" onload="getAllSkills()"></script>
         </aside>
 
         <main>
