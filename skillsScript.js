@@ -44,6 +44,7 @@ function getSkillsList(tableName, tableTittle, id) {
     list.appendChild(h2);
     list.appendChild(ul);
 }
+
 let phones = [
     "+48-509-246-806"
 ]
