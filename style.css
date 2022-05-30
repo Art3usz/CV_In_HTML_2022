@@ -1,21 +1,55 @@
 body {
     font-family: "Montserrat", sans-serif;
     background: #f5f7fa;
+    min-width: 230mm;
+    height: 100%;
 }
 
 h1 {
     font-weight: 700;
     font-size: 45px;
     line-height: 55px;
+    margin-top: 47px;
+    margin-left: 40px;
+    color: #ffffff;
 }
 
 aside {
-    background-color: #1e2939;
-    width: 370px;
+    background-color: #5a81bb;
+    min-width: 370px;
+    min-height: 297mm;
 }
 
 main {
     padding: 102px 88px;
+    min-height: 297mm;
+}
+
+ol.list-primary {
+    max-width: 50em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none;
+}
+ol.list-primary li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content: ". . . . . . . . . . . . . . . . . . . . "
+        ". . . . . . . . . . . . . . . . . . . . "
+        ". . . . . . . . . . . . . . . . . . . . "
+        ". . . . . . . . . . . . . . . . . . . . "
+        ". . . . . . . . . . . . . . . . . . . . "
+        ". . . . . . . . . . . . . . . . . . . . ";
+}
+ol.list-primary span:first-child {
+    padding-right: 0.33em;
+    background: #ffffff;
+}
+ol.list-primary span + span {
+    float: right;
+    padding-left: 0.33em;
+    background: #ffffff;
 }
 
 .wrapper {
@@ -23,7 +57,9 @@ main {
     flex-direction: row;
     justify-content: center;
     width: 1200px;
-    margin: 40px auto;
+    min-width: 210mm;
+    min-height: 297mm;
+    margin: 20px auto;
     background: #ffffff;
     box-shadow: 6px 6px 20px 0px #0000001a;
 }
@@ -37,7 +73,7 @@ main {
 }
 
 .contact-links {
-    color: #c5c2c2;
+    color: #dddddd;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -78,8 +114,10 @@ main {
 
 .job-tittle {
     font-weight: 700;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 17px;
+    color: #ffffff;
+    margin-left: 40px;
 }
 
 .description {
@@ -90,7 +128,7 @@ main {
 }
 
 .projects {
-    width: 485px;
+    min-width: 485px;
     margin-bottom: 51px;
 }
 
@@ -109,6 +147,7 @@ main {
     font-weight: 400;
     line-height: 24px;
     text-decoration: none;
+    text-overflow: ellipsis;
 }
 
 .header-primary {
@@ -126,6 +165,7 @@ main {
 
 .highlight {
     color: #fb6d3a;
+    font-weight: bold;
 }
 
 .job-date {
@@ -147,4 +187,39 @@ main {
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
+}
+.icon {
+    width: 16px;
+    height: 16px;
+}
+
+.personal-details {
+    padding-top: 7px;
+}
+
+.personal-details-item {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+@media print {
+    html,
+    body {
+        width: 210mm;
+        height: 297mm;
+    }
+    .main-page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
 }

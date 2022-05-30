@@ -1,16 +1,21 @@
 function getAllSkills() {
-    getSkillsList(techSkillsTable, "Tech Skills", "techSkills");
+    getSkillsList(techSkillsTable, "Tools & Technologies", "techSkills");
     getSkillsList(softSkillsTable.sort(), "Soft Skills", "softSkills");
-
+    getSkillsList(languageTable, "Languages", "language");
 }
 
 let techSkillsTable = [
-    "C#", "Java", "Python", "C++",
+    "C#", 
+    "Java", 
+    "Python", 
+    "C++",
     ".Net",
     "HTML5",
     "CSS3",
     "GIT",
-    "JavaScript"
+    "JavaScript",
+    "Unity",
+    "Visual Studio"
 ]
 
 let softSkillsTable = [
@@ -21,6 +26,11 @@ let softSkillsTable = [
     "Motivation",
     "Listening",
     "Patience"
+]
+
+let languageTable = [
+    "English",
+    "German"
 ]
 
 function getSkillsList(tableName, tableTittle, id) {
@@ -46,12 +56,12 @@ function getSkillsList(tableName, tableTittle, id) {
 }
 
 let phones = [
-    "+48-509-246-806"
+    " +48-509-246-806"
 ]
 
 let mails = [
-    "Damian.Pieczykolan@10g.pl",
-    "Damian_Pieczykolan@10g.pl"
+    " Damian.Pieczykolan@10g.pl",
+    " Damian_Pieczykolan@10g.pl"
 ]
 
 function getContacts() {
@@ -64,31 +74,31 @@ function getContacts() {
     p.classList.add("contact-links");
     
     phones.forEach((item) => {
-        let sp = document.createElement("span");
+        let img = document.createElement("img");
         let a = document.createElement("a");
         let link="tel:"+item;
         let br=document.createElement("br");
-        sp.classList.add("bold");
-        sp.innerText = "C: ";
+        img.classList.add("icon");
+        img.src="icons/phone-call.png";
         a.classList.add("contact-links");
         a.href = link;
         a.innerText = item;
-        p.appendChild(sp);
+        p.appendChild(img);
         p.appendChild(a);
         p.appendChild(br);
     })
 
     mails.forEach((item) => {
-        let sp = document.createElement("span");
+        let img = document.createElement("img");
         let a = document.createElement("a");
         let link="mailto:"+item;
         let br=document.createElement("br");
-        sp.classList.add("bold");
-        sp.innerText = "E: ";
+        img.classList.add("icon");
+        img.src="icons/mail-icon.png";
         a.classList.add("contact-links");
         a.href = link;
         a.innerText = item;
-        p.appendChild(sp);
+        p.appendChild(img);
         p.appendChild(a);
         p.appendChild(br);
     })

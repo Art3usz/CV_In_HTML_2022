@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside>
+
+            <!-- <img class="cv-photo" src="photo.jpg" width="370px" height="354px" />-->
+            <h1>RESUME</h1>
+            <h2 class="job-tittle">Developer</h2>
+
+            <div class="skills-block" id="Personal details">
+                <h2 class="header-secondary">Personal details</h2>
+                <div class="personal-details"> <img src="icons/personal.png" class="icon"><span
+                        class="personal-details-item"> Damian Pieczykolan</span><br>
+                </div>
+                <div class="personal-details"> <img src="icons/home.png" class="icon"><span
+                        class="personal-details-item"> Lublin</span>
+                </div>
+            </div>
+            <div class="contact-block" id="contacts"></div>
+            <div class="skills-block" id="techSkills"> </div>
+            <div class="skills-block" id="softSkills"> </div>
+            <div class="skills-block" id="language"> </div>
+            <script src="asideBarScript.js" onload="getContacts()"></script>
+            <script src="asideBarScript.js" onload="getAllSkills()"></script>
+        </aside>
+
+        <main>
+            <!--
+            <div class="main-description">
+                
+                <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                    Risus commodo viverra maecenas accumsan lacus vel
+                    facilisis.
+                </p>
+            </div>
+        -->
+
+            <div class="projects" id="websites">
+                <h2 class="header-primary">My websites and projects</h2>
+                <ol class="list-primary">
+                    <li>
+                        <span class="list-primary-item"> <a class="list-primary-item"
+                                href="https://github.com/Art3usz" target="_blank"><img src="icons/gitlab.png" class="icon">
+                                https://github.com/Art3usz</a>
+                        </span><span class="list-primary-item"><span class="highlight"> Programing codes
+                                portfolio</span></span>
+                    </li>
+                    <li>
+                        <span class="list-primary-item"> <a class="list-primary-item"
+                                href="https://www.linkedin.com/in/damian-pieczykolan/" target="_blank"><img src="icons/linkedin.png"
+                                    class="icon">
+                                https://linkedin.com/in/damian-pieczykolan/</a>
+                        </span><span class="list-primary-item"><span class="highlight"> Professional
+                                profile</span></span>
+                    </li>
+                    <li>
+                        <span class="list-primary-item"> <a class="list-primary-item"
+                                href="https://art3usz.itch.io" target="_blank"><img src="icons/globe.png" class="icon">
+                                https://art3usz.itch.io</a>
+                        </span><span class="list-primary-item"><span class="highlight"> My games portfolio</span></span>
+                    </li>
+                </ol>
+            </div>
+            <div>
+                <h2 class="header-primary">Work Experience</h2>
+                <div>
+                    <h3 class="job-name">Front-End Developer <span class="highlight">Freelance</span></h3>
+                    <p class="job-date">September 2019 - up to now | Country</p>
+
+                    <ul class="job-list">
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit.
+                        </li>
+                        <li>Risus commodo viverra maecenas.</li>
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div>
+                <h2 class="header-primary">Education</h2>
+                <div>
+                    <span class="job-name"><span class="highlight">National University</span></h3>
+                        <h4 class="field-of-study">Management</h4>
+                        <p class="job-date">September 2009 - June 2014 | Country</p>
+                        <ul></ul>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
