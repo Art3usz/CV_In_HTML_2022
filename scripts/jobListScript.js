@@ -10,7 +10,7 @@ class Job {
     }
 }
 
-var myJobs = [
+var myEducation = [
     new Job(
         1,
         "Apr 2017",
@@ -55,9 +55,9 @@ function getJobs() {
 
     let d = document.createElement("div");
 
-    myJobs.forEach((item) => {
+    myEducation.forEach((item) => {
         let h3 = document.createElement("h3");
-        h3.classList.add("job-name");
+        h3.classList.add("name");
         h3.innerText = item.position + "\n";
 
         let sp = document.createElement("span");
@@ -65,12 +65,14 @@ function getJobs() {
         sp.innerText = item.concern;
 
         h3.appendChild(sp);
-        d.appendChild(h3);
+        
+        let sp2 = document.createElement("span");
+        h3.appendChild(document.createElement("br"));
+        sp2.classList.add("date");
+        sp2.innerText = item.dateStart + " - " + item.dateEnd + " | " + item.place;
+        h3.appendChild(sp2);
 
-        let p = document.createElement("p");
-        p.classList.add("job-date");
-        p.innerText = item.dateStart + " - " + item.dateEnd + " | " + item.place;
-        d.appendChild(p);
+        d.appendChild(h3);
 
         let description = item.description.split('•');
         if (description.length > 0 && description[0] !== '') {

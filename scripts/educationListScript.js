@@ -10,31 +10,38 @@ class Education {
     }
 }
 
-var myJobs = [
+var myEducation = [
     new Education(
         1,
-        "Apr 2017",
-        "Feb 2022",
-        "Administrator at the Institute of Computer Science",
+        "2012",
+        "2015",
+        "Bachelor of Computer Science",
         "Maria Curie-Sklodowska University",
-        "Lublin | Poland",
-        "My duties included taking care of computer hardware and software at the Institute of Computer Science of UMCS, consisting in:• receiving reports about breakdowns, helpdesk,• servicing and installation of computer hardware (computers, peripherals, software),• installation, update and repair of software,• connecting, configuring, diagnosing and repairing computer and office devices,• ongoing repair and diagnosis of computer hardware (hardware / software), • provision of maintenance services for the end user: installation of operating systems, applications, client software,• maintenance and damage assessment as well as repair of workstations,"),
+        "Lublin | Poland"
+        ),
+        new Education(
+            2,
+            "2015",
+            "2017",
+            "Master of Computer Science",
+            "Maria Curie-Sklodowska University",
+            "Lublin | Poland"
+            )
+    ];
 
-];
-
-function getJobs() {
+function getSchools() {
     let list = document.getElementById("education");
 
     let h2 = document.createElement("h2");
     h2.classList.add("header-primary");
-    h2.innerText = "Work Experience";
+    h2.innerText = "Education";
     list.appendChild(h2);
 
     let d = document.createElement("div");
 
-    myJobs.forEach((item) => {
+    myEducation.forEach((item) => {
         let h3 = document.createElement("h3");
-        h3.classList.add("job-name");
+        h3.classList.add("name");
         h3.innerText = item.position + "\n";
 
         let sp = document.createElement("span");
@@ -42,12 +49,14 @@ function getJobs() {
         sp.innerText = item.concern;
 
         h3.appendChild(sp);
-        d.appendChild(h3);
 
-        let p = document.createElement("p");
-        p.classList.add("job-date");
-        p.innerText = item.dateStart + " - " + item.dateEnd + " | " + item.place;
-        d.appendChild(p);
+        let sp2 = document.createElement("span");
+        h3.appendChild(document.createElement("br"));
+        sp2.classList.add("date");
+        sp2.innerText = item.dateStart + " - " + item.dateEnd + " | " + item.place;
+        h3.appendChild(sp2);
+
+        d.appendChild(h3);
 
         let description = item.description.split('•');
         if (description.length > 0 && description[0] !== '') {
