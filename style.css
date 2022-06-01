@@ -166,6 +166,7 @@ ol.list-primary span + span {
 .highlight {
     color: #fb6d3a;
     font-weight: bold;
+    font-size: 14px;
 }
 
 .job-date {

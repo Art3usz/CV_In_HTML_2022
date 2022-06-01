@@ -28,8 +28,8 @@
             <div class="skills-block" id="techSkills"> </div>
             <div class="skills-block" id="softSkills"> </div>
             <div class="skills-block" id="language"> </div>
-            <script src="asideBarScript.js" onload="getContacts()"></script>
-            <script src="asideBarScript.js" onload="getAllSkills()"></script>
+            <script src="scripts/asideBarScript.js" onload="getContacts()"></script>
+            <script src="scripts/asideBarScript.js" onload="getAllSkills()"></script>
         </aside>
 
         <main>
@@ -50,54 +50,31 @@
                 <h2 class="header-primary">My websites and projects</h2>
                 <ol class="list-primary">
                     <li>
-                        <span class="list-primary-item"> <a class="list-primary-item"
-                                href="https://github.com/Art3usz" target="_blank"><img src="icons/gitlab.png" class="icon">
+                        <span class="list-primary-item"> <a class="list-primary-item" href="https://github.com/Art3usz"
+                                target="_blank"><img src="icons/gitlab.png" class="icon">
                                 https://github.com/Art3usz</a>
                         </span><span class="list-primary-item"><span class="highlight"> Programing codes
                                 portfolio</span></span>
                     </li>
                     <li>
                         <span class="list-primary-item"> <a class="list-primary-item"
-                                href="https://www.linkedin.com/in/damian-pieczykolan/" target="_blank"><img src="icons/linkedin.png"
-                                    class="icon">
+                                href="https://www.linkedin.com/in/damian-pieczykolan/" target="_blank"><img
+                                    src="icons/linkedin.png" class="icon">
                                 https://linkedin.com/in/damian-pieczykolan/</a>
                         </span><span class="list-primary-item"><span class="highlight"> Professional
                                 profile</span></span>
                     </li>
                     <li>
-                        <span class="list-primary-item"> <a class="list-primary-item"
-                                href="https://art3usz.itch.io" target="_blank"><img src="icons/globe.png" class="icon">
+                        <span class="list-primary-item"> <a class="list-primary-item" href="https://art3usz.itch.io"
+                                target="_blank"><img src="icons/globe.png" class="icon">
                                 https://art3usz.itch.io</a>
                         </span><span class="list-primary-item"><span class="highlight"> My games portfolio</span></span>
                     </li>
                 </ol>
             </div>
-            <div>
-                <h2 class="header-primary">Work Experience</h2>
-                <div>
-                    <h3 class="job-name">Front-End Developer <span class="highlight">Freelance</span></h3>
-                    <p class="job-date">September 2019 - up to now | Country</p>
-
-                    <ul class="job-list">
-                        <li>
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
-                        </li>
-                        <li>
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit.
-                        </li>
-                        <li>Risus commodo viverra maecenas.</li>
-                        <li>
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit, sed do eiusmod.
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-            <div>
+            <div id="jobs"> </div>
+            <script src="scripts/jobListScript.js" onload="getJobs()"></script>
+            <div id="education">
                 <h2 class="header-primary">Education</h2>
                 <div>
                     <span class="job-name"><span class="highlight">National University</span></h3>
@@ -105,7 +82,9 @@
                         <p class="job-date">September 2009 - June 2014 | Country</p>
                         <ul></ul>
                 </div>
+
             </div>
+            <script src="scripts/jobListScript.js" onload="getJobs()"></script>
         </main>
     </div>
 </body>

@@ -1,9 +1,3 @@
-function getAllSkills() {
-    getSkillsList(techSkillsTable, "Tools & Technologies", "techSkills");
-    getSkillsList(softSkillsTable.sort(), "Soft Skills", "softSkills");
-    getSkillsList(languageTable, "Languages", "language");
-}
-
 let techSkillsTable = [
     "C#", 
     "Java", 
@@ -32,6 +26,13 @@ let languageTable = [
     "English",
     "German"
 ]
+
+function getAllSkills() {
+    getSkillsList(techSkillsTable, "Tools & Technologies", "techSkills");
+    getSkillsList(softSkillsTable.sort(), "Soft Skills", "softSkills");
+    getSkillsList(languageTable, "Languages", "language");
+}
+
 
 function getSkillsList(tableName, tableTittle, id) {
     let list = document.getElementById(id);
