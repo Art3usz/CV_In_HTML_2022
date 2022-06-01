@@ -1,6 +1,5 @@
 class Education {
-    constructor(id, dateStart = "", dateEnd = "", position = "", concern = "", place = "", description = "") {
-        this.id = id;
+    constructor(dateStart = "", dateEnd = "", position = "", concern = "", place = "", description = "") {
         this.dateStart = dateStart;
         this.dateEnd = dateEnd;
         this.position = position;
@@ -10,24 +9,21 @@ class Education {
     }
 }
 
-var myEducation = [
-    new Education(
-        1,
-        "2012",
-        "2015",
-        "Bachelor of Computer Science",
-        "Maria Curie-Sklodowska University",
-        "Lublin | Poland"
-        ),
-        new Education(
-            2,
-            "2015",
-            "2017",
-            "Master of Computer Science",
-            "Maria Curie-Sklodowska University",
-            "Lublin | Poland"
-            )
-    ];
+var myEducation = [new Education(
+    "2015",
+    "2017",
+    "Master of Computer Science",
+    "Maria Curie-Sklodowska University",
+    "Lublin | Poland"
+),
+new Education(
+    "2012",
+    "2015",
+    "Bachelor of Computer Science",
+    "Maria Curie-Sklodowska University",
+    "Lublin | Poland"
+)
+];
 
 function getSchools() {
     let list = document.getElementById("education");
@@ -68,7 +64,7 @@ function getSchools() {
             ul.appendChild(sp);
             for (let i = 1; i < description.length; i++) {
                 let li = document.createElement('li');
-                li.innerText=description[i];
+                li.innerText = description[i];
                 ul.appendChild(li);
             }
             d.appendChild(ul);
