@@ -1,15 +1,11 @@
 let techSkillsTable = [
     "C#", 
-    "Java", 
-    "Python", 
     "C++",
     ".Net",
-    "HTML5",
-    "CSS3",
     "GIT",
     "JavaScript",
     "Unity",
-    "Visual Studio"
+    "Visual Studio Code"
 ]
 
 let softSkillsTable = [
@@ -23,8 +19,7 @@ let softSkillsTable = [
 ]
 
 let languageTable = [
-    "English",
-    "German"
+    "English"
 ]
 
 function getAllSkills() {
@@ -62,7 +57,8 @@ let phones = [
 
 let mails = [
     " Damian.Pieczykolan@10g.pl",
-    " Damian_Pieczykolan@10g.pl"
+    " Damian_Pieczykolan@10g.pl",
+    " pieczykolandamian@gmail.com"
 ]
 
 function getContacts() {
