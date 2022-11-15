@@ -202,6 +202,16 @@ ol.list-primary span + span {
     color: #ffffff;
     font-weight: 600;
 }
+.footer-block {
+    position: fixed;
+    width: 100%;
+    left: 4mm;
+    right: 4mm;
+    bottom: 4px;
+    background-color: white;
+    color: rgb(82, 81, 81);
+    text-align: center;
+}
 
 @page {
     size: A4;
