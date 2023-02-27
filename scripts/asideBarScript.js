@@ -1,8 +1,6 @@
 let techSkillsTable = [
-    "C#", 
-    "C++",
-    ".Net",
-    "GIT",
+    "C#","Java","C++" ,
+    "HTML",
     "JavaScript",
     "Unity",
     "Visual Studio Code"
