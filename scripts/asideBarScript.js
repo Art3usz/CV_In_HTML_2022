@@ -67,9 +67,9 @@ let phones = [
 ]
 
 let mails = [
-    "Damian.Pieczykolan@10g.pl"
-    ,
-    "Damian_Pieczykolan@10g.pl",
+   // "Damian.Pieczykolan@10g.pl"
+  //  ,
+   // "Damian_Pieczykolan@10g.pl",
     "pieczykolandamian@gmail.com"
 ]
 
