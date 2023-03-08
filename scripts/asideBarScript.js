@@ -32,7 +32,7 @@ let languageTable = [
 
 function getAllSkills() {
     getSkillsList(techSkillsTable.sort(), "Technologies", "techSkills");
-    getSkillsList(toolsTable.sort(), "Tools", "techSkills");
+    getSkillsList(toolsTable.sort(), "Tools", "toolsSkills");
     getSkillsList(softSkillsTable.sort(), "Soft Skills", "softSkills");
     getSkillsList(languageTable, "Languages", "language");
 }
