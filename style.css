@@ -228,14 +228,9 @@ page[size="A4"] {
 }
 @media print {
     html,
-    body ,page {
-        margin: 0;
-        border: initial;
-        border-radius: initial;
-        width: initial;
-        min-height: initial;
-        box-shadow: initial;
-        background: initial;
-        page-break-after: always;
-    }
+    body ,page 
+    [size="A4"] {
+            margin: 0;
+            box-shadow: 0;
+          }
 }
