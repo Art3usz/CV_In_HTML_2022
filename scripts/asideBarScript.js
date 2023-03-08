@@ -27,7 +27,9 @@ let toolsTable = [
 ]
 
 let languageTable = [
-    "English - B2+", "German - A1","Polish - native"
+    "English  - B2", 
+    "German - A1",
+    "Polish    - native"
 ]
 
 function getAllSkills() {
