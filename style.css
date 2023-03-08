@@ -212,6 +212,15 @@ ol.list-primary span + span {
     color: rgb(82, 81, 81);
     text-align: center;
 }
+page[size="A4"] {
+    background: white;
+    width: 21cm;
+    height: 29.7cm;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  }
 
 @page {
     size: A4;
@@ -219,11 +228,7 @@ ol.list-primary span + span {
 }
 @media print {
     html,
-    body {
-        width: 210mm;
-        height: 297mm;
-    }
-    .main-page {
+    body ,page {
         margin: 0;
         border: initial;
         border-radius: initial;
