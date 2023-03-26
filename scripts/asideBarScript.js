@@ -1,9 +1,9 @@
 let techSkillsTable = [
-    "C#","Java","C++" ,
+    "C#",
+    "Java",
+    "C++" ,
     "HTML",
-    "JavaScript",
-    "Unity",
-    "Visual Studio Code"
+    "JavaScript"
 ]
 
 let softSkillsTable = [
@@ -15,13 +15,20 @@ let softSkillsTable = [
     "Listening",
     "Patience"
 ]
+let toolsTable = [
+    "Visual Studio Code",
+    "Unity"
+]
 
 let languageTable = [
-    "English"
+    "English  - B2", 
+    "German - A1",
+    "Polish    - native"
 ]
 
 function getAllSkills() {
-    getSkillsList(techSkillsTable, "Tools & Technologies", "techSkills");
+    getSkillsList(techSkillsTable.sort(), "Technologies", "techSkills");
+    getSkillsList(toolsTable.sort(), "Tools", "toolsSkills");
     getSkillsList(softSkillsTable.sort(), "Soft Skills", "softSkills");
     getSkillsList(languageTable, "Languages", "language");
 }
