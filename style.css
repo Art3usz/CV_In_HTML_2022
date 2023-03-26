@@ -61,7 +61,7 @@ ol.list-primary span + span {
     min-height: 297mm  auto;
     margin: 20px auto;
     background: #ffffff;
-    box-shadow: 6px 6px 20px 0px #0000001a;
+    box-shadow: 6px 6px 20px 10px #0000001a;
 }
 
 .cv-photo {
@@ -204,8 +204,7 @@ ol.list-primary span + span {
 }
 .footer-block {
     position: fixed;
-    min-width: none;
-    width: 100%;
+    min-width: 210px;;
     left: 4mm;
     right: 4mm;
     bottom: 4px;
