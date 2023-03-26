@@ -1,13 +1,13 @@
 let techSkillsTable = [
     "C#",
-    "C++",
-    ".Net",
+  //  "C++",
+  //  ".Net",
     "GIT",
-    "JavaScript",
-    "HTML 5",
-    "Java",
-    "Python",
-    "PL/SQL"
+  //  "JavaScript",
+  //  "HTML 5",
+  //  "Java",
+  //  "Python",
+  // "PL/SQL"
 ]
 
 let softSkillsTable = [
@@ -26,7 +26,7 @@ let toolsTable = [
 
 let languageTable = [
     "English  - B2", 
-    "German - A1",
+  //  "German - A1",
     "Polish    - native"
 ]
 
