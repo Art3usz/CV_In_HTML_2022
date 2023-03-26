@@ -1,11 +1,13 @@
 let techSkillsTable = [
-    "C#", 
+    "C#",
     "C++",
     ".Net",
     "GIT",
     "JavaScript",
-    "Unity",
-    "Visual Studio Code"
+    "HTML 5",
+    "Java",
+    "Python",
+    "PL/SQL"
 ]
 
 let softSkillsTable = [
@@ -17,13 +19,20 @@ let softSkillsTable = [
     "Listening",
     "Patience"
 ]
+let toolsTable = [
+    "Visual Studio Code",
+    "Unity"
+]
 
 let languageTable = [
-    "English"
+    "English  - B2", 
+    "German - A1",
+    "Polish    - native"
 ]
 
 function getAllSkills() {
-    getSkillsList(techSkillsTable, "Tools & Technologies", "techSkills");
+    getSkillsList(techSkillsTable.sort(), "Technologies", "techSkills");
+    getSkillsList(toolsTable.sort(), "Tools", "toolsSkills");
     getSkillsList(softSkillsTable.sort(), "Soft Skills", "softSkills");
     getSkillsList(languageTable, "Languages", "language");
 }
@@ -56,10 +65,10 @@ let phones = [
 ]
 
 let mails = [
-    "Damian.Pieczykolan@10g.pl"
-    /*,
-    "Damian_Pieczykolan@10g.pl",
-    "pieczykolandamian@gmail.com"*/
+   // "Damian.Pieczykolan@10g.pl"
+  //  ,
+   // "Damian_Pieczykolan@10g.pl",
+    "pieczykolandamian@gmail.com"
 ]
 
 function getContacts() {
@@ -70,14 +79,14 @@ function getContacts() {
     list.appendChild(h2);
     let p = document.createElement("p");
     p.classList.add("contact-links");
-    
+
     phones.forEach((item) => {
         let img = document.createElement("img");
         let a = document.createElement("a");
-        let link="tel:"+item;
-        let br=document.createElement("br");
+        let link = "tel:" + item;
+        let br = document.createElement("br");
         img.classList.add("icon");
-        img.src="icons/phone-call.png";
+        img.src = "icons/phone-call.png";
         a.classList.add("contact-links");
         a.href = link;
         a.innerText = item;
@@ -89,10 +98,10 @@ function getContacts() {
     mails.forEach((item) => {
         let img = document.createElement("img");
         let a = document.createElement("a");
-        let link="mailto:"+item;
-        let br=document.createElement("br");
+        let link = "mailto:" + item;
+        let br = document.createElement("br");
         img.classList.add("icon");
-        img.src="icons/mail-icon.png";
+        img.src = "icons/mail-icon.png";
         a.classList.add("contact-links");
         a.href = link;
         a.innerText = item;
