@@ -17,12 +17,12 @@ let softSkillsTable = [
 ]
 let toolsTable = [
     "Visual Studio Code",
-    "Unity"
+   
 ]
 
 let languageTable = [
     "English  - B2", 
-    "German - A1",
+   // "German - A1",
     "Polish    - native"
 ]
 
