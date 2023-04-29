@@ -5,7 +5,6 @@ let techSkillsTable = [
     "HTML",
     "JavaScript",
     "PL/SQL",
-    "Java",
     "Python"
 ]
 
