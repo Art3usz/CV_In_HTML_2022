@@ -12,6 +12,13 @@ class Job {
 
 var myEducation = [
     new Job(
+        "Jun 2023",
+        "Aug 2024",
+        "Administrator",
+        "TechniSchools",
+        "Lublin | Poland"
+    ),
+    new Job(
         "Apr 2017",
         "Feb 2022",
         "Administrator at the Institute of Computer Science",
@@ -39,6 +46,7 @@ var myEducation = [
         "Microsoft",
         "Remote"
     )
+    
 ];
 
 function getJobs() {
